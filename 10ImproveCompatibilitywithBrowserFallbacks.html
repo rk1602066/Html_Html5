@@ -1,0 +1,17 @@
+<!--
+Improve Compatibility with Browser Fallbacks
+all browser doesnot support variable. for ex: internet explorer
+-->
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+  <!-- so here we use extra background attribute so that if a browser doesnot support variable then it will use by default-->
+    background:red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
