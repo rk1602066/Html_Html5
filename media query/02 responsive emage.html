@@ -4,3 +4,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+
+The simplest way to make your images properly appear on High-Resolution Displays, 
+such as the MacBook Pros "retina display" is to define their width and height values 
+as only half of what the original file is. Here is an example of an image that is only using half of the original height and width:
+
+<style>
+  img { height: 250px; width: 250px; }
+</style>
+<img src="coolPic500x500" alt="A most excellent picture">
